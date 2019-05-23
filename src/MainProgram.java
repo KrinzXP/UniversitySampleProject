@@ -9,7 +9,6 @@ public class MainProgram {
 		
 		
 		Scanner scanner = new Scanner(System.in);
-		LocalDate now = LocalDate.now();
 		
 		while(true)
 		{

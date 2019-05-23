@@ -14,12 +14,12 @@ public class Dosen extends Biodata{
 	{
 		return this.dosenID;
 	}
-	public void setDosenID()
+	public void setDosenID(String dosenID)
 	{
 		this.dosenID = dosenID;
 	}
 	
-	public BigDecimal getSalary()
+	public BigDecimal getSalary(BigDecimal salary)
 	{
 		return this.salary;
 	}
@@ -32,7 +32,7 @@ public class Dosen extends Biodata{
 	{
 		return this.entryDate;
 	}
-	public void setEntryDate()
+	public void setEntryDate(LocalDate entryDate)
 	{
 		this.entryDate = entryDate;
 	}
@@ -41,7 +41,7 @@ public class Dosen extends Biodata{
 	{
 		return mataKuliah;
 	}
-	public void setMataKuliah()
+	public void setMataKuliah(LinkedList<String>mataKuliah)
 	{
 		this.mataKuliah = mataKuliah;
 	}

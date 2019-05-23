@@ -13,7 +13,7 @@ public class Mahasiswa extends Biodata{
 	{
 		return this.studentID;
 	}
-	public void setStudentID()
+	public void setStudentID(String studentID)
 	{
 		this.studentID = studentID;
 	}
@@ -22,7 +22,7 @@ public class Mahasiswa extends Biodata{
 	{
 		return entryDate;
 	}	
-	public void setEntryDate()
+	public void setEntryDate(LocalDate entryDate)
 	{
 		this.entryDate = entryDate;
 	}
@@ -45,6 +45,7 @@ public class Mahasiswa extends Biodata{
 		this.mataKuliah = new LinkedList<String>();
 		
 	}
+	
 	
 	@Override
 	public void printSummary()

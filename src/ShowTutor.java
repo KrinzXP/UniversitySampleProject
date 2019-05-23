@@ -43,9 +43,20 @@ public class ShowTutor {
 				System.out.printf("NIK: %s, Name: %s %s\n",tutor.getDosenID(),tutor.firstName,tutor.lastName);
 			}
 			//Type in dosen id
-			System.out.println("Input student ID for tutor info you want to find out: ");
+			System.out.println("Input tutor ID for tutor info you want to find out: ");
 			String inputCode = scanner.nextLine();
 			
+			for(Dosen tutorAgain : dosen)
+			{
+				if(inputCode == tutorAgain.getDosenID())
+				{
+					tutorAgain.printSummary();
+				}
+				else
+				{
+					System.out.println("Dosen tidak ditemukan");
+				}
+			}
 			//check inputCode == studentID.
 			//print student detail of inputCode
 			

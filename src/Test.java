@@ -28,10 +28,10 @@ public class Test {
 		dosen.add(antik);
 		dosen.add(cahya);
 		
-		for(Dosen tutor : dosen)
-		{
-			System.out.printf("NIK: %s, Name: %s %s\n",tutor.getDosenID(),tutor.firstName,tutor.lastName);
-		}
+		Biodata rempong = new Biodata("Remi", "Pongga", LocalDate.of(1995, Month.DECEMBER, 5),"Bandung",
+									  Gender.MALE, "312858234011989002", Religion.CATHOLIC,BloodType.B);
+		
+		rempong.printSummary();
 	}
 
 }
